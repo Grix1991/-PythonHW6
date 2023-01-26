@@ -5,3 +5,9 @@
 # 1
 # 19
 # Вывод: [1, 9, 13, 14, 19]
+
+list_1 = [int(i) for i in input("Введите элементы списка через пробел без запятых: ").split()]
+min = int(input("Введите минимальное значение: "))
+max = int(input("Введите максимальное значение: "))
+list_2 = [i for i in list_1 if i >= min and i <= max]
+print(sorted(list_2))
